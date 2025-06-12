@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简历</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <!-- 加载动画 -->
+    <div class="loader"></div>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="navbar">
+            <a href="#home">个人简介</a>
+            <a href="#projects">项目</a>
+            <a href="#skills">技能</a>
+            <a href="#contact">联系方式</a>
+            <button id="theme-toggle">模式切换</button>
+        </nav>
+    </header>
+    <!-- 首页/个人介绍 -->
+    <section id="home" class="section">
+        <h1>项目介绍</h1>
+        <div class="carousel">
+            <div class="slides">
+                <div class="slide"><img src="slide3.jpg" style="width: 500px; height: 300px;"></div>
+                <div class="slide"><img src="slide1.jpg" style="width: 500px; height: 300px;"></div>
+                <div class="slide"><img src="slide2.jpg" style="max-width: 100%; max-height: 100%; object-fit: contain;"></div>
+
+            </div>
+            <button class="prev">上一张</button>
+            <button class="next">下一张</button>
+            <div class="indicators"></div>
+        </div>
+    </section>
+    <section id="about" class="section"> 
+        <div class="about-content"> 
+            <h1>个人介绍</h1> 
+            <p>你好，我是吴政霖，我是一名来自 “8D 魔幻之都” 重庆的热血青年，我今年21岁，性格如山城的火锅般热烈，兼具爬坡上坎练就的坚韧毅力与雾都孕育的创新思维。目前就读于三亚学院区块链工程专业，在碧海蓝天的环绕下，以代码为舟，在区块链技术的浩瀚海洋中探索前行。<br> 在专业学习上，我系统掌握了区块链基础理论、智能合约开发、分布式系统等核心课程知识，熟练运用 Solidity、Python 等编程语言进行区块链项目开发。参与过基于区块链的供应链溯源模拟项目，从需求分析、架构设计到代码实现全程深度参与，成功搭建起可追溯商品全生命周期信息的去中心化平台，在实践中深化了对区块链技术特性的理解与应用能力。<br> 除了专业知识的积累，我积极投身各类实践活动。曾加入学校的区块链技术社团，组织技术分享会，与志同道合的伙伴共同钻研前沿技术；还利用假期参与区块链行业调研，深入了解该技术在金融、政务等领域的实际应用场景，进一步明确了自己的职业发展方向。<br> 我始终相信，区块链技术将重塑未来世界的信任体系与协作模式。作为一名年轻的区块链工程专业学子，我渴望在这个充满无限可能的领域中，用所学知识与创新精神，为行业发展贡献自己的力量，同时也期待在未来的学习与工作中，不断突破自我，实现更大的价值。</p>
+        </div> 
+    </section>
+    <!-- 教育背景 -->
+    <section id="education" class="section">
+        <h1>教育背景</h1>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <h3>学校名称：三亚学院</h3>
+                    <p>专业：区块链工程</p>
+                    <p>入学时间 - 毕业时间：2023.9.10 - 2027.7.1</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 专业技能 -->
+    <section id="skills" class="section">
+        <h1>专业技能</h1>
+        <div class="skill-cards">
+            <div class="skill-card">
+                <img src="html-icon.png" alt="HTML" style="width: 50px; height: 50px;">
+                <h3>HTML/CSS</h3>
+                <div class="progress-bar">
+                    <div class="progress" style="width: 90%"></div>
+                </div>
+            </div>
+        </div>
+        <canvas id="skillsChart"></canvas>
+    </section>
+    <!-- 项目经验/作品集 -->
+    <section id="projects" class="section">
+        <h1>项目经验</h1>
+        <div class="project-cards">
+            <div class="project-card">
+                <img src="project1.jpg" alt="项目1" style="width: 50px; height: 50px;">
+                <h3>项目1</h3>
+                <p>技术栈：HTML, CSS, JavaScript</p>
+                <p>功能描述：采用响应式设计，各端有良好显示效果，有交互功能</p>
+                <a href="https://github.com/project1">GitHub链接</a>
+            </div>
+        </div>
+    </section>
+    <!-- 联系方式 -->
+    <section id="contact" class="section">
+        <h1>联系方式</h1>
+        <form>
+            <input type="text" value="姓名：吴政霖" style="border: none;" readonly>
+            <input type="email" value="邮箱：1246839490@qq.com" style="border: none; margin-right: 20px;" readonly>
+            <input type="tel" value="电话：13883503377" style="border: none;" readonly>
+        </form>
+    </section>
+    <!-- 返回顶部按钮 -->
+    <button id="back-to-top">返回顶部</button>
+    <script src="script.js"></script>
+</body>
+</html>
